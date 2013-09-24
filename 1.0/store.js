@@ -49,6 +49,13 @@ KISSY.add(function(S){
 		*/
 		url: null,
 		/**
+		* 异步请求方式('get'/'post')，在jsonp方式下，不起作用，固定为get
+		* @property requestType
+		* @type String
+		* @default  'get'
+		*/
+		requestType: 'get',
+		/**
 		* 节点数据中，id的key（选填, 不填的话默认是 adapterForNode.id）
 		* @property idKey
 		* @type String
@@ -180,7 +187,7 @@ KISSY.add(function(S){
 				isTreeData = isTreeData || false,
 				loadParam = _self._getParam(param),
 				ajaxConfig = {
-					type: 'post',
+					type: _self.get('requestType'),
 					dataType: 'json'
 				};
 
