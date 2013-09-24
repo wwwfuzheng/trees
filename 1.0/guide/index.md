@@ -57,15 +57,18 @@ Trees - 用于树形数据的展示及数据选取
 
 * 需要将 `resultType` 所配置的结果，回显到 resultInput 中，即可回显结果
 
-    // resultType: 'id'
-    <input type="hidden" id="J_ListTreeResult" value='{"id":291}'/>
+```
+	// resultType: 'id'
+	<input type="hidden" id="J_ListTreeResult" value='{"id":291}'/>
+```
 
 ##### 重新加载数据
 
 * 提供同一地址，不同参数的重新加载
 
-		tree.reload(param);
-		
+```
+	tree.reload(param);
+```		
 		
 ##### 通过文本搜索数据		
 		
@@ -95,12 +98,15 @@ Trees - 用于树形数据的展示及数据选取
 
 * 快速定位视图
 
-		tree.updateListsById();
+```
+	tree.updateListsById();
+```
 
 ##### 清空选择
 
-		tree.clearSelect();
-
+```
+	tree.clearSelect();
+```
 
 ## 展现层模块
 
