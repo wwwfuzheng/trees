@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>多级列表选择框 - 单选</title>
+<script src="http://g.tbcdn.cn/kissy/k/1.3.0/seed-min.js"></script>
+<style>
+#J_ListTree{
+	margin: 20px 0;
+}
+</style>
+</head>
+<body>
+
+<!-- 容器 -->
+<div id="J_ListTree"></div>
+<!-- 结果收集、设置回显数据 -->
+<input type="hidden" id="J_ListTreeResult" value='{"path":["12","598","604"]}'>
+
+<!-- 常用功能演示 -->
+<button id="J_SearchId" data-id="152">通过Id定位</button>
+<button id="J_ChangeData" data-data="156">切换数据源</button>
+<button id="J_Clear">清空选择</button>
+<button id="J_GetRestlt">获取结果</button>
+<script>
+if (KISSY.Config.debug) {
+	KISSY.config({
+		packages:[
+			{
+				name:"gallery",
+				path: "../../../",
+				charset:"utf-8",
+				ignorePackageNameInUri:true
+			}
+		]
+	});
+}
+
+KISSY.use('gallery/trees/1.0/index', function(S, Trees){
+	// 初始化列表树
+	var list = new Trees.List({
+		renderTo: 'J_ListTree',
+		resultId: 'J_ListTreeResult',
+		url: 'data/treedata.html',
+		searchTip: '关键字',
+		resultType: 'path'
+	});
+
+	// 通过Id定位
+	S.one('#J_SearchId').on('click', function(){
+		var id = S.one(this).attr('data-id');
+		// updateListsById(id) 方法
+		list.updateListsById(id);
+	});
+	// 切换数据源
+	S.one('#J_ChangeData').on('click', function(){
+		var data = S.one(this).attr('data-data');
+		// reload(param) 方法。 暂时不支持重置url，而是传入不同参数来获取数据
+		list.reload({id: data});
+	});
+	// 清空选择
+	S.one('#J_Clear').on('click', function(){
+		// clearSelect() 方法
+		list.clearSelect();
+	});
+	// 获取结果
+	S.one('#J_GetRestlt').on('click', function(){
+		// getValueStrFromResult() 方法
+		var result = list.getValueStrFromResult();
+		alert(result);
+		console.log(result);
+	});
+
+
+});
+
+
+</script>
+
+</body>
+</html>

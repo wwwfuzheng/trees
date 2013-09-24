@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>城市联动框 - 单选</title>
+<script src="http://g.tbcdn.cn/kissy/k/1.3.0/seed-min.js"></script>
+<style>
+#J_City{
+	margin: 20px 0;
+}
+</style>
+</head>
+<body>
+
+<!-- 容器 -->
+<div id="J_City"></div>
+<!-- 结果收集、设置回显数据 -->
+<input type="hidden" id="J_CityResult" value='{"path":["浙江省","杭州市"]}'>
+
+<!-- 常用功能演示 -->
+<button id="J_SearchId" data-id="沈阳市">通过Id定位</button>
+<button id="J_ChangeData" data-data="156">切换数据源</button>
+<button id="J_Clear">清空选择</button>
+<button id="J_GetRestlt">获取结果</button>
+
+<script>
+if (KISSY.Config.debug) {
+	KISSY.config({
+		packages:[
+			{
+				name:"gallery",
+				path: "../../../",
+				charset:"utf-8",
+				ignorePackageNameInUri:true
+			}
+		]
+	});
+}
+
+KISSY.use('gallery/trees/1.0/index', function(S, Trees){
+	// 初始化城市联动框
+	var city = new Trees.City({
+		renderTo: 'J_City',
+		resultId: 'J_CityResult',
+		// 0 - 省市数据
+		// 1 - 省市区数据
+		// 2 - 省市数据-简单版（省略"省"、"市"）
+		cityType: 1
+	});
+
+	// 通过Id定位
+	S.one('#J_SearchId').on('click', function(){
+		var id = S.one(this).attr('data-id');
+		// updateListsById(id) 方法
+		city.updateListsById(id);
+	});
+	// 切换数据源
+	S.one('#J_ChangeData').on('click', function(){
+		var data = S.one(this).attr('data-data');
+		// reload(param) 方法。 暂时不支持重置url，而是传入不同参数来获取数据
+		city.reload({id: data});
+	});
+	// 清空选择
+	S.one('#J_Clear').on('click', function(){
+		// clearSelect() 方法
+		city.clearSelect();
+	});
+	// 获取结果
+	S.one('#J_GetRestlt').on('click', function(){
+		// getPathFromResult() 方法
+		var result = city.getPathFromResult()
+		alert(result);
+	});
+
+
+});
+
+
+</script>
+
+</body>
+</html>

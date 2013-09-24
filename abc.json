@@ -1,0 +1,14 @@
+{
+    "name": "trees",
+    "version": "1.0",
+    "desc":"树形结构组件",
+    "cover":"http://gtms04.alicdn.com/tps/i4/T1uMOPFXxiXXXlLDfQ-692-309.png",
+    "tag":"1.0.0",
+    "author": {
+        "name": "桐人",
+        "email": "wwwfuzheng@qq.com",
+        "page": "https://github.com/wwwfuzheng"
+    },
+    "type": "kissy-gallery",
+    "type-url": "http://gallery.kissyui.com/guide"
+}
