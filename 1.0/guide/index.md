@@ -1,6 +1,6 @@
 ## 综述
 
-Trees - 用于树形数据的展示及数据选取
+Trees - 树形数据管理域展现
 
 * 版本：1.0
 * 作者：桐人
@@ -144,7 +144,7 @@ Trees - 用于树形数据的展示及数据选取
 
 本模块提供了**城市联动框**。
 
-### Trees.Tree
+### Trees.Tree (Base KISSY.Tree)
 
 模块名：`gallery/trees/1.0/tree`
 
