@@ -1,4 +1,4 @@
-## Trees - 树形数据管理域展现
+## Trees - 树形数据管理与展现
 
 * 版本：1.0
 * 教程：[http://gallery.kissyui.com/trees/1.0/guide/index.html](http://gallery.kissyui.com/trees/1.0/guide/index.html)
