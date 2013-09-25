@@ -1,11 +1,9 @@
-
 /* list tree */
 .list-search .list-search-input,
 .list-more,
 .list-button{
 	background:url('http://img01.taobaocdn.com/tps/i1/T1yOpLXpRiXXau3FLx-30-160.png') -999px -999px no-repeat;
 }
-
 
 .list-container{
 	height:298px;
@@ -93,8 +91,8 @@
 	background-position:169px -140px;
 }
 .list-selected{
-	border-color:#9CD7FC;
 	background-color:#DFF1FB;
+	border-color:#9CD7FC;
 }
 
 .list-left,
@@ -125,7 +123,6 @@
 .list-button-active.list-button-right{
 	background-position:-15px 0px;
 }
-
 .list-result{
 	height:30px;
 	line-height:30px;

@@ -704,7 +704,7 @@ KISSY.add('gallery/trees/1.0/store',function(S){
 
 	});
 
-	return Store;
+	return Store; 
 
 },{requires: ['core']});
 
@@ -1532,9 +1532,9 @@ KISSY.add('gallery/trees/1.0/tree',function(S, STree, Base){
 		* 树html节点class前缀，用于自定义皮肤 （选填）
 		* @property prefixCls
 		* @type String
-		* @default  'mui-'
+		* @default  ''
 		*/
-		prefixCls: 'mui-',
+		prefixCls: '',
 		/**
 		* 是否使用懒加载来优化多节点效率问题 默认不使用 （选填）
 		* @property isLazyLoad

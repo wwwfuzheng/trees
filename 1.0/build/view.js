@@ -699,7 +699,7 @@ KISSY.add('gallery/trees/1.0/store',function(S){
 
 	});
 
-	return Store;
+	return Store; 
 
 },{requires: ['core']});
 

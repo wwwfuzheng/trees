@@ -690,7 +690,7 @@ KISSY.add(function(S){
 
 	});
 
-	return Store;
+	return Store; 
 
 },{requires: ['core']});
 

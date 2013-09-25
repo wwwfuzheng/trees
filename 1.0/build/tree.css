@@ -3,20 +3,20 @@
  * @author yiminghe@gmail.com
  */
 
-.mui-tree-expand-icon-plus,
-.mui-tree-expand-icon-minus,
-.mui-tree-expand-icon-tplus,
-.mui-tree-expand-icon-lplus,
-.mui-tree-expand-icon-tminus,
-.mui-tree-expand-icon-lminus,
-.mui-tree-expand-icon-t,
-.mui-tree-expand-icon-l,
-.mui-tree-collapsed-folder-icon,
-.mui-tree-expanded-folder-icon,
-.mui-tree-file-icon,
-.mui-tree-node-checked0,
-.mui-tree-node-checked1,
-.mui-tree-node-checked2{
+.tree-expand-icon-plus,
+.tree-expand-icon-minus,
+.tree-expand-icon-tplus,
+.tree-expand-icon-lplus,
+.tree-expand-icon-tminus,
+.tree-expand-icon-lminus,
+.tree-expand-icon-t,
+.tree-expand-icon-l,
+.tree-collapsed-folder-icon,
+.tree-expanded-folder-icon,
+.tree-file-icon,
+.tree-node-checked0,
+.tree-node-checked1,
+.tree-node-checked2{
   background-image: url("http://img02.taobaocdn.com/tps/i2/T1mA5xXt8dXXasE3se-390-192.png");
   width: 19px;
   height: 16px;
@@ -26,90 +26,91 @@
   *zoom: 1;
 }
 
-.mui-tree-hide-root {
+.tree-hide-root {
   display: none;
 }
-.mui-tree-node-focused {
+.tree-node-focused {
   outline: none;
 }
-.mui-tree-node-row {
+.tree-node-row {
   white-space: nowrap;
   line-height: 16px;
   height: 16px;
 }
-.mui-tree-lchildren {
+.tree-lchildren {
   padding-left: 19px;
 }
-.mui-tree-children {
+.tree-children {
   padding-left: 19px;
   background-repeat: repeat-y;
   background-image: url("http://img01.taobaocdn.com/tps/i1/T1bPnwXm0aXXbVJQDa-19-16.png");
 }
-.mui-tree-expand-icon-plus {
+.tree-expand-icon-plus {
   background-position: 0 0;
 }
-.mui-tree-expand-icon-minus {
+.tree-expand-icon-minus {
   background-position: -222px 0;
 }
-.mui-tree-expand-icon-tplus {
+.tree-expand-icon-tplus {
   background-position: -246px 0;
 }
-.mui-tree-expand-icon-tminus {
+.tree-expand-icon-tminus {
   background-position: -270px 0;
 }
-.mui-tree-expand-icon-lplus {
+.tree-expand-icon-lplus {
   background-position: -294px 0;
 }
-.mui-tree-expand-icon-lminus {
+.tree-expand-icon-lminus {
   background-position: -318px 0;
 }
-.mui-tree-expand-icon-t {
+.tree-expand-icon-t {
   background-position: -342px 0;
 }
-.mui-tree-expand-icon-l {
+.tree-expand-icon-l {
   background-position: -366px 0;
 }
-.mui-tree-collapsed-folder-icon {
+.tree-collapsed-folder-icon {
   width: 16px;
   background-position: -198px -24px;
 }
-.mui-tree-expanded-folder-icon {
+.tree-expanded-folder-icon {
   width: 16px;
   background-position: -222px -24px;
 }
-.mui-tree-file-icon {
+.tree-file-icon {
   width: 16px;
   background-position: -246px -24px;
 }
-.mui-tree-node-content {
+.tree-node-content {
   margin-left: 3px;
   padding: 1px 2px 1px 2px;
   text-decoration: none;
 }
-.mui-tree-node-content:hover {
+.tree-node-content:hover {
   text-decoration: underline;
 }
-.mui-tree-node-selected .mui-tree-node-content {
+.tree-node-selected .tree-node-content {
   background: #08c;
   color: white;
 }
-.mui-tree-node-focused .mui-tree-node-selected .mui-tree-node-content {
+.tree-node-focused .tree-node-selected .tree-node-content {
   background: highlight;
   color: highlighttext;
 }
-.mui-tree-node-checked0 {
+.tree-node-checked0 {
   width: 16px;
   background-position: 0 -2px;
 }
-.mui-tree-node-checked1 {
+.tree-node-checked1 {
   width: 16px;
   background-position: -66px -2px;
 }
-.mui-tree-node-checked2 {
+.tree-node-checked2 {
   width: 16px;
   background-position: -132px -2px;
 }
 
-.mui-tree-node-content{
+.tree-node-content{
 	font-size: 12px;
 }
+ 
