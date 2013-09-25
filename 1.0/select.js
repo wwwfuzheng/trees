@@ -35,7 +35,7 @@ KISSY.add(function(S, View){
 		* @property selectCls
 		* @type String
 		*/
-		selectCls: 'form-field-select'
+		selectCls: ''
 	};
 	S.extend(Select, View);
 	S.augment(Select, {

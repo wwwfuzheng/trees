@@ -2284,7 +2284,7 @@ KISSY.add('gallery/trees/1.0/select',function(S, View){
 		* @property selectCls
 		* @type String
 		*/
-		selectCls: 'form-field-select'
+		selectCls: ''
 	};
 	S.extend(Select, View);
 	S.augment(Select, {

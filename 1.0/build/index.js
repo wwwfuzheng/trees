@@ -1546,14 +1546,14 @@ KISSY.add('gallery/trees/1.0/tree',function(S, STree, Base){
 		* 懒加载步长
 		* @property lazyCount
 		* @type Number
-		* @default  50
+		* @default  5
 		*/
 		lazyCount: 5,
 		/**
 		* 懒加载间隔
 		* @property lazyTime
 		* @type Number
-		* @default  50
+		* @default  300
 		*/
 		lazyTime: 300
 	};
@@ -1837,7 +1837,7 @@ KISSY.add('gallery/trees/1.0/tree',function(S, STree, Base){
 		/**
 		* 重置树的标题
 		* @method resetTitle
-		* @param {String} title 节点对象
+		* @param {String} title 标题
 		*/
 		resetTitle: function(title){
 			var _self = this;
@@ -3360,7 +3360,7 @@ KISSY.add('gallery/trees/1.0/select',function(S, View){
 		* @property selectCls
 		* @type String
 		*/
-		selectCls: 'form-field-select'
+		selectCls: ''
 	};
 	S.extend(Select, View);
 	S.augment(Select, {

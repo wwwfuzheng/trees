@@ -100,14 +100,14 @@ KISSY.add(function(S, STree, Base){
 		* 懒加载步长
 		* @property lazyCount
 		* @type Number
-		* @default  50
+		* @default  5
 		*/
 		lazyCount: 5,
 		/**
 		* 懒加载间隔
 		* @property lazyTime
 		* @type Number
-		* @default  50
+		* @default  300
 		*/
 		lazyTime: 300
 	};
@@ -391,7 +391,7 @@ KISSY.add(function(S, STree, Base){
 		/**
 		* 重置树的标题
 		* @method resetTitle
-		* @param {String} title 节点对象
+		* @param {String} title 标题
 		*/
 		resetTitle: function(title){
 			var _self = this;
