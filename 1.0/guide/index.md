@@ -6,9 +6,15 @@ Trees - 树形数据管理与展现
 * 作者：桐人
 * demo：[http://gallery.kissyui.com/trees/1.0/demo/index.html](http://gallery.kissyui.com/trees/1.0/demo/index.html)
 
+### 特色
+
+* 丰富API，灵活的配置项，让你随心所欲操作所有树型结构数据
+* 统一的结果管理，丰富的结果类型，随心所欲获取选择结果
+* 特色抽象的视图树，让级联类型的操作丰富多彩
+
 ### 组件结构
 
-	Tree
+	Trees
 		|- Base			树的基类
 		|- Store		树形数据缓冲对象
 		|- ViewStore	视图树数据缓冲对象 继承于 Trees.Store
